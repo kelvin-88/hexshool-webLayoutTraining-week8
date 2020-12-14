@@ -1,3 +1,5 @@
+$primary: #6C51E2;
+
 $container-max-widths: (
   // sm: 540px,
   // md: 720px,
@@ -20,4 +22,33 @@ ul {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0;
+}
+
+
+
+.carousel-caption {
+  bottom: unset;
+  top: 33%;
+}
+
+.banner { 
+  object-fit: cover;
+  height: 320px;
+  // background-image: url("../images/index-banner.jpg"); 
+  // height: 320px;
+  // background-position: center center;
+  // background-size: cover;
+  // opacity: 0.9;
+}
+
+.banner-text {
+  font-size: 3rem;
+}
+
+.search {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 10px;
+  border: 1px solid red;
 }
