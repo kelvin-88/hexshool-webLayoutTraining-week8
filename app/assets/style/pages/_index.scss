@@ -1,0 +1,46 @@
+
+
+
+.banner { 
+  object-fit: cover;
+  height: 320px;
+  margin-bottom: 120px;
+  // background-image: url("../images/index-banner.jpg"); 
+  // height: 320px;
+  // background-position: center center;
+  // background-size: cover;
+  // opacity: 0.9;
+}
+
+.banner-text {
+  font-size: 3rem;
+}
+
+.carousel-caption {
+  bottom: unset;
+  top: 33%;
+}
+
+.search {
+  background-color: #F1F0F8;
+  position: absolute;
+  top: 270px;
+  // position: relative;
+  // bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  // margin-bottom: 200px;
+
+  // left: 0;
+  // right: 0;
+  // margin: auto;
+  // left: 6%;
+  // right: 6%;
+  // margin: 0 auto;
+  // border: 1px solid red;
+}
+
+.search-box {
+  width: 232px;
+}

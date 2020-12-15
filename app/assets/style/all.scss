@@ -1,5 +1,24 @@
 $primary: #6C51E2;
 
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: ($spacer * .75),
+    4: $spacer,
+    5: ($spacer * 1.5),
+    6: ($spacer * 2),
+    7: ($spacer * 2.5),
+    8: ($spacer * 3),
+    9: ($spacer * 3.5),
+    10: ($spacer * 4)
+  ),
+  $spacers
+);
+
 $container-max-widths: (
   // sm: 540px,
   // md: 720px,
@@ -9,6 +28,7 @@ $container-max-widths: (
 
 
 @import "bootstrap/bootstrap.scss";
+
 
 select {
   border: none;
@@ -20,35 +40,18 @@ ul {
   padding-left: 0;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
   margin-bottom: 0;
 }
 
-
-
-.carousel-caption {
-  bottom: unset;
-  top: 33%;
+.container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.banner { 
-  object-fit: cover;
-  height: 320px;
-  // background-image: url("../images/index-banner.jpg"); 
-  // height: 320px;
-  // background-position: center center;
-  // background-size: cover;
-  // opacity: 0.9;
+
+.header {
+  padding: 0 85px;
 }
 
-.banner-text {
-  font-size: 3rem;
-}
-
-.search {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 10px;
-  border: 1px solid red;
-}
+@import "./pages/index.scss"
