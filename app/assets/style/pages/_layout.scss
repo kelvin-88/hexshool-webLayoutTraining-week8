@@ -1,0 +1,126 @@
+$primary: #6C51E2;
+
+$spacer: .25rem !default;
+$spacers: () !default;
+@for $i from 1 through 50 {
+  $spacers: map-merge($spacers, (
+    $i: ($i * $spacer)
+  ));
+}
+
+@import "../bootstrap/vendor/rfs";
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$h7-font-size:                $font-size-base * 0.875 !default;
+$h8-font-size:                $font-size-base * 0.75 !default;
+h7, .h7 { @include font-size($h7-font-size); }
+h8, .h8 { @include font-size($h8-font-size); }
+
+$container-max-widths: (
+  // sm: 540px,
+  // md: 720px,
+  // lg: 960px,
+  xl: 1280px // xl: 1140px
+) !default;
+
+$card-spacer-y:                     .75rem !default;
+// $card-spacer-x: 0rem; //                    1.25rem !default;
+
+
+$card-spacer-x:                     0;//1.25rem !default;
+$card-border-width:                 0;//$border-width !default;
+$card-border-radius:                0.5rem;//$border-radius !default;
+$card-img-overlay-padding:          1rem 1.5rem ;//1.25rem !default;
+
+// @import "bootstrap/bootstrap.scss";
+@import "bootstrap/_functions";
+@import "bootstrap/_variables";
+@import "bootstrap/_mixins";
+
+@import "bootstrap/_reboot";
+
+@import "bootstrap/_buttons";
+@import "bootstrap/_card";
+@import "bootstrap/_carousel";
+@import "bootstrap/_grid";
+@import "bootstrap/_type";
+@import "bootstrap/_utilities";
+
+
+// reset
+select {
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
+  margin-bottom: 0;
+}
+
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  padding: 0 85px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-title {
+  font-family: 'Raleway', sans-serif;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-extra-bold {
+  font-weight: 800;
+}
+
+.text-gray-title {
+  color: #00000099;
+}
+
+.text-gray-text {
+  color: #00000061;
+}
+
+.text-cross {
+  text-decoration: line-through;
+}
+
+// font
+.fontFamilyOpenSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fontFamilyRaleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fontFamilyRoboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.fontWeightRegular {
+  font-weight: 400;
+}
+.fontWeightBold {
+  font-weight: 700;
+}
+.fontWeightExtraBold {
+  font-weight: 800;
+}
+
+
