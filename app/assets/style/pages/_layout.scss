@@ -87,6 +87,23 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
   padding: 0 85px;
 }
 
+.logo {
+  background-image: url(../images/logo-aloha.svg);
+  width: 96px;	
+  height: 24px;	
+  display: block;	
+  text-indent: 101%;	
+  overflow: hidden;	
+  white-space: no-wrap;	
+}
+
+.selected {
+  color: $primary;
+  display:inline-block;
+  border-bottom:2px solid $primary;
+  padding-bottom:2px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
