@@ -18,8 +18,9 @@
   top: 33%;
 }
 
+
+
 .search {
-  background-color: #F1F0F8;
   position: absolute;
   top: 270px;
   // position: relative;
@@ -51,4 +52,96 @@
 .choicesHotel {
   height: 175px;
   object-fit: cover; 
+}
+
+
+// swiper
+.swiper-container {
+  width: 100%;
+  // height: 100%;
+
+  // width: 33%;
+  // height: 200px;
+  // object-fit: contain;
+  // object-fit: cover;
+}
+
+.swiper-slide {
+  
+
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.card-layer {
+  // background-image: transparent linear-gradient(270deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box,
+  // url("../images/Osaka.jpg");  
+  height: 78px; 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+  
+}
+
+.card-layer-image1 {
+  background-image: linear-gradient(270deg, #00000000 0%, #000000 100%),
+      url("../images/Osaka.jpg");
+}
+
+.card-layer-image2 {
+  background-image: linear-gradient(270deg, #00000000 0%, #000000 100%),
+      url("../images/Kyoto.jpg");
+}
+
+.card-layer-image3 {
+  background-image: linear-gradient(270deg, #00000000 0%, #000000 100%),
+      url("../images/Reykjavic.jpg");
+}
+
+.card-layer-image4 {
+  background-image: linear-gradient(270deg, #00000000 0%, #000000 100%),
+      url("../images/Paris.jpg");
+}
+
+.card-layer-image5 {
+  background-image: linear-gradient(270deg, #00000000 0%, #000000 100%),
+      url("../images/Roman.jpg");
+}
+
+.card-layer-image6 {
+  background-image: linear-gradient(270deg, #00000000 0%, #000000 100%),
+      url("../images/Bangkok.jpg");
+}
+
+.get-inspiration img {
+  height: 263px;
+  object-fit: cover;
+}
+
+.subscription {
+  padding: 92px 0;
+  h2 {
+    font-size: 48px;    
+  }
+
+  input[type="email"] {
+    width: 390px;
+  }
 }

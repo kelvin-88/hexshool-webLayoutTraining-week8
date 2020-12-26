@@ -23,7 +23,8 @@ $container-max-widths: (
   xl: 1280px // xl: 1140px
 ) !default;
 
-$card-spacer-y:                     .75rem !default;
+// $card-spacer-y:                     .75rem !default;
+$card-spacer-y:                     .5rem !default;
 // $card-spacer-x: 0rem; //                    1.25rem !default;
 
 
@@ -48,6 +49,20 @@ $card-img-overlay-padding:          1rem 1.5rem ;//1.25rem !default;
 
 
 // reset
+
+// *,*:before, *:after {
+//   box-sizing: border-box;
+// }
+a {
+  color: unset;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 select {
   border: none;
 }
@@ -68,7 +83,7 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
   padding-right: 0;
 }
 
-.header {
+.container-padding {
   padding: 0 85px;
 }
 
@@ -89,7 +104,11 @@ body {
 }
 
 .text-gray-title {
-  color: #00000099;
+  color: #00000099;  
+}
+
+.text-gray-subtitle {
+  color: #FFFFFF98;
 }
 
 .text-gray-text {
@@ -98,6 +117,10 @@ body {
 
 .text-cross {
   text-decoration: line-through;
+}
+
+.text-background {
+  background-color: #F1F0F8;
 }
 
 // font
