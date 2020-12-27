@@ -148,5 +148,13 @@
 
   input[type="email"] {
     width: 390px;
+    margin: 0;
+  }
+
+ input[type="email" i] {
+    padding-right: 0;
   }
 }
+
+.swiper-button-next { color: red !important; }
+

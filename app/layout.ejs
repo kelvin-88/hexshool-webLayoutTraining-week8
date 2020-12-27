@@ -10,43 +10,100 @@
   </title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700;800&family=Roboto&display=swap');
-  </style>
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700;800&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700;800&family=Roboto&display=swap');
+  </style> -->
+
 </head>
 
 <body>
-  <header class="container container-padding">
+  <header>
     <div class="d-flex justify-content-between py-4">
-      <div class="logo">Aloha</div>
-      <ul class="d-flex fontFamilyRoboto">
-        <li class="d-flex mr-12 z">
-          <span class="material-icons">
-            language
-          </span>
-          <select class="form-control">
-            <option></option>
-            <option>English</option>
-            <option>Chinese</option>
-          </select>
-        </li>
-        <li class="mr-12">
-          <h2 class="h6 ">Sign up</h2>
-        </li>
-        <li>
-          <h2 class="h6">Login</h2>
-        </li>
-      </ul>
+      <div class="container container-padding">
+        <!-- <ul class="d-flex fontFamilyRoboto">
+          <li class="d-flex mr-12">
+            <span class="material-icons">
+              language
+            </span>
+
+            <div class="dropdown show">
+              <a class="btn dropdown-toggle p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">中文</a>
+              </div>
+            </div>
+
+          </li>
+          <li class="mr-12">
+            <h2 class="h6 ">Sign up</h2>
+          </li>
+          <li>
+            <h2 class="h6">Login</h2>
+          </li>
+        </ul> -->
+
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-between">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="logo">Aloha</div>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <!-- <ul class="navbar-nav mr-auto d-flex fontFamilyRoboto"> -->
+
+            <ul class="navbar-nav d-flex fontFamilyRoboto">
+
+              <li class="nav-item d-flex mr-12">
+                <span class="material-icons">
+                  language
+                </span>
+
+                <div class="dropdown show">
+                  <a class="btn dropdown-toggle p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">中文</a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item mr-12">
+                <a href="#">
+                  <h2 class="h6 ">Sign up</h2>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-none d-lg-block">
+                  <h2 class="nav-itemx h6">Login1</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-md-none">
+            <a href="#">
+              <h2 class="nav-itemx h6">Login2</h2>
+            </a>
+          </div>
+        </nav>
+      </div>
     </div>
-
-
   </header>
-
-  </div>
 
   <%- contents %>
 
@@ -85,8 +142,36 @@
       </div>
 
     </footer>
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+
+    <!-- <script>
+      if (typeof jQuery == "undefined") {
+        alert("JQuery is not installed");
+      } else {
+        alert("JQuery is installed correctly!");
+      }
+
+      window.onload = function () {
+        if (window.jQuery) {
+          alert('jQuery is loaded');
+        }
+        else {
+          alert('jQuery is not loaded');
+        }
+      }
+    </script> -->
 </body>
 
 </html>

@@ -33,19 +33,27 @@ $card-border-width:                 0;//$border-width !default;
 $card-border-radius:                0.5rem;//$border-radius !default;
 $card-img-overlay-padding:          1rem 1.5rem ;//1.25rem !default;
 
-// @import "bootstrap/bootstrap.scss";
-@import "bootstrap/_functions";
-@import "bootstrap/_variables";
-@import "bootstrap/_mixins";
+@import "bootstrap/bootstrap.scss";
 
-@import "bootstrap/_reboot";
 
-@import "bootstrap/_buttons";
-@import "bootstrap/_card";
-@import "bootstrap/_carousel";
-@import "bootstrap/_grid";
-@import "bootstrap/_type";
-@import "bootstrap/_utilities";
+// @import "bootstrap/functions";
+// @import "bootstrap/variables";
+// @import "bootstrap/mixins";
+
+// @import "bootstrap/reboot";
+
+// @import "bootstrap/buttons";
+// @import "bootstrap/card";
+// @import "bootstrap/carousel";
+// @import "bootstrap/dropdown";
+// @import "bootstrap/grid";
+
+// @import "bootstrap/nav";
+// @import "bootstrap/navbar";
+// @import "bootstrap/type";
+// @import "bootstrap/transitions"; // for nav bar collapse when md size
+// @import "bootstrap/utilities";
+
 
 
 // reset
@@ -141,26 +149,25 @@ body {
 }
 
 // font
-.fontFamilyOpenSans {
-  font-family: 'Open Sans', sans-serif;
-}
+// .fontFamilyOpenSans {
+//   font-family: 'Open Sans', sans-serif;
+// }
 
-.fontFamilyRaleway {
-  font-family: 'Raleway', sans-serif;
-}
+// .fontFamilyRaleway {
+//   font-family: 'Raleway', sans-serif;
+// }
 
-.fontFamilyRoboto {
-  font-family: 'Roboto', sans-serif;
-}
+// .fontFamilyRoboto {
+//   font-family: 'Roboto', sans-serif;
+// }
 
-.fontWeightRegular {
-  font-weight: 400;
-}
-.fontWeightBold {
-  font-weight: 700;
-}
-.fontWeightExtraBold {
-  font-weight: 800;
-}
-
+// .fontWeightRegular {
+//   font-weight: 400;
+// }
+// .fontWeightBold {
+//   font-weight: 700;
+// }
+// .fontWeightExtraBold {
+//   font-weight: 800;
+// }
 
