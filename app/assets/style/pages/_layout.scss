@@ -33,26 +33,26 @@ $card-border-width:                 0;//$border-width !default;
 $card-border-radius:                0.5rem;//$border-radius !default;
 $card-img-overlay-padding:          1rem 1.5rem ;//1.25rem !default;
 
-@import "bootstrap/bootstrap.scss";
+// @import "bootstrap/bootstrap.scss";
 
 
-// @import "bootstrap/functions";
-// @import "bootstrap/variables";
-// @import "bootstrap/mixins";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
-// @import "bootstrap/reboot";
+@import "bootstrap/reboot";
 
-// @import "bootstrap/buttons";
-// @import "bootstrap/card";
-// @import "bootstrap/carousel";
-// @import "bootstrap/dropdown";
-// @import "bootstrap/grid";
+@import "bootstrap/buttons";
+@import "bootstrap/card";
+@import "bootstrap/carousel";
+@import "bootstrap/dropdown";
+@import "bootstrap/grid";
 
-// @import "bootstrap/nav";
-// @import "bootstrap/navbar";
-// @import "bootstrap/type";
-// @import "bootstrap/transitions"; // for nav bar collapse when md size
-// @import "bootstrap/utilities";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/type";
+@import "bootstrap/transitions"; // for nav bar collapse when md size
+@import "bootstrap/utilities";
 
 
 
@@ -61,6 +61,11 @@ $card-img-overlay-padding:          1rem 1.5rem ;//1.25rem !default;
 // *,*:before, *:after {
 //   box-sizing: border-box;
 // }
+
+.content-box {
+  box-sizing: content-box;
+}
+
 a {
   color: unset;
 }
@@ -92,7 +97,8 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
 }
 
 .container-padding {
-  padding: 0 85px;
+  // padding: 0 85px;
+  padding: 0 15px;
 }
 
 .logo {
@@ -146,6 +152,31 @@ body {
 
 .text-background {
   background-color: #F1F0F8;
+}
+
+
+.subscription {
+  // padding: 92px 0;
+  h2 {
+    font-size: 48px;    
+  }
+
+  input[type="email"] {
+    width: 390px;
+    margin: 0;
+  }
+
+ input[type="email" i] {
+    padding-right: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    .h3 {
+      font-size: 48px;
+    }
+
+  
+  }
 }
 
 // font
