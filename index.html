@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Aloha
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700;800&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700;800&family=Roboto&display=swap');
+  </style> -->
+
+</head>
+
+<body>
+  <header>
+    <div class="d-flex justify-content-between py-4">
+      <div class="container container-padding">
+        <!-- <ul class="d-flex fontFamilyRoboto">
+          <li class="d-flex mr-12">
+            <span class="material-icons">
+              language
+            </span>
+
+            <div class="dropdown show">
+              <a class="btn dropdown-toggle p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">中文</a>
+              </div>
+            </div>
+
+          </li>
+          <li class="mr-12">
+            <h2 class="h6 ">Sign up</h2>
+          </li>
+          <li>
+            <h2 class="h6">Login</h2>
+          </li>
+        </ul> -->
+
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-between">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="logo">Aloha</div>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <!-- <ul class="navbar-nav mr-auto d-flex fontFamilyRoboto"> -->
+
+            <ul class="navbar-nav d-flex fontFamilyRoboto">
+
+              <li class="nav-item d-flex mr-12">
+                <span class="material-icons">
+                  language
+                </span>
+
+                <div class="dropdown show">
+                  <a class="btn dropdown-toggle p-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">中文</a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item mr-12">
+                <a href="#">
+                  <h2 class="h6 ">Sign up</h2>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-none d-lg-block">
+                  <h2 class="nav-itemx h6">Login</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-md-none">
+            <a href="#">
+              <h2 class="nav-itemx h6">Login</h2>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  
+<div class="container">
+
+  <!-- banner -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/index-banner.jpg" class="d-block w-100 banner" alt="...">
+        <div class="carousel-caption">
+          <h2 class="banner-text text-title text-extra-bold h3">Discover your ideal hotel</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/index-banner.jpg" class="d-block w-100 banner" alt="...">
+        <div class="carousel-caption">
+          <h2 class="banner-text text-title text-extra-bold">Make a Big Difference in Your Life</h2>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <div class="search d-block text-background rounded-top p-6">
+      <!-- <div class="search text-background rounded-top p-6"> -->
+      <!-- <ul class="d-flex justify-content-between align-items-center"> -->
+      <ul class="d-flex flex-column flex-lg-row">
+        <li class="search-box d-flex bg-white p-4 mr-lg-4 mb-4 mb-lg-0" id="destination">
+          <span class="material-icons mr-4">
+            room
+          </span>
+          <!-- <p>Destination</p> -->
+          <div class="dropdown border-0">
+            <div class="select border-0">
+              <span>Destination</span>
+              <i class="fa fa-chevron-left"></i>
+            </div>
+            <input type="hidden" class="border-0" name="destination">
+            <ul class="dropdown-menu">
+              <li id="Osaka">Osaka</li>
+              <li id="Thailand">Thailand</li>
+            </ul>
+          </div>
+        </li>
+        <!-- <li class="search-box d-flex bg-white p-4 mr-lg-4 mb-4 mb-lg-0 date-range">
+          <span class="material-icons mr-4">
+            date_range
+          </span>
+          <p><span class="checkin-picker" id="check-in">Check-in</span> / <span class="checkout-picker"
+              id="check-out">Check-out</span></p>
+        </li> -->
+        <li class="search-box d-flex align-items-center bg-white p-4 mr-lg-4 mb-4 mb-lg-0">
+          <span class="material-icons mr-4">
+            date_range
+          </span>
+          <input type="text" class="content-box h7 border-0" name="dates" value="Check-in / Check-out" />
+        </li>
+        <li class="search-box d-flex bg-white p-4 mr-lg-4 mb-lg-0 mb-4" id="guests">
+          <span class="material-icons mr-4">
+            person
+          </span>
+          <!-- <p>Guests</p> -->
+          <div class="dropdown border-0">
+            <div class="select border-0">
+              <span>Guests</span>
+              <i class="fa fa-chevron-left"></i>
+            </div>
+            <input type="hidden" class="border-0" name="guests">
+            <ul class="dropdown-menu">
+              <li id="1">1</li>
+              <li id="2">2</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="btn btn-primary text-uppercase text-bold d-block px-8 py-4">search</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- banner -->
+
+  <div class="top-choices container-padding">
+    <!-- Top Choices -->
+    <h2 class="text-title text-bold mb-6 mt-lg-30">Top Choices</h2>
+    <ul class="d-flex text-title text-gray-title h4 mb-7">
+      <li class="selected px-6">
+        <a href="#">Bali<sup>128</span></a>
+      </li>
+      <li>
+        <a href="#" class="px-6">Okinawa<sup>67</sup></a>
+      </li>
+      <li class="px-6"><a href="#">Taipei<span class="choicesNo">53</span></a></li>
+    </ul>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top1.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Hotel Aqua</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★★</h6>
+                <h7 class="text-gray-title">5.0</h7>
+                <h8 class="text-gray-text">・2k reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 2,480</h7>
+                <h8 class="text-gray-text text-cross">TWD 3,980</h8>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top2.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Mr. Kawasaki Inn</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★</h6>
+                <h7 class="text-gray-title">4.0</h7>
+                <h8 class="text-gray-text">・500 reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 3,380</h7>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top3.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Weekly Paradise</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★</h6>
+                <h7 class="text-gray-title">4.0</h7>
+                <h8 class="text-gray-text">・470 reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 4,780</h7>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top4.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Beast Hotel</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★</h6>
+                <h7 class="text-gray-title">4.0</h7>
+                <h8 class="text-gray-text">・283 reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 1,980</h7>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top1.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Hotel Aqua</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★★</h6>
+                <h7 class="text-gray-title">5.0</h7>
+                <h8 class="text-gray-text">・2k reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 2,480</h7>
+                <h8 class="text-gray-text text-cross">TWD 3,980</h8>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top2.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Mr. Kawasaki Inn</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★</h6>
+                <h7 class="text-gray-title">4.0</h7>
+                <h8 class="text-gray-text">・500 reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 3,380</h7>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top3.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Weekly Paradise</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★</h6>
+                <h7 class="text-gray-title">4.0</h7>
+                <h8 class="text-gray-text">・470 reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 4,780</h7>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top choicesHotel" src="assets/images/top4.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+              <h4 class="card-title text-bold text-left mt-2">Beast Hotel</h4>
+              <div class="d-flex align-items-center mb-2">
+                <h6 class="mr-1">★★★★</h6>
+                <h7 class="text-gray-title">4.0</h7>
+                <h8 class="text-gray-text">・283 reviews</h8>
+              </div>
+              <div class="d-flex align-items-center">
+                <h7 class="text-gray-title mr-2">TWD 1,980</h7>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- Top Choices -->
+
+    <!-- Popular Destinations -->
+    <h2 class="text-title text-bold mb-6 mt-12 mt-lg-18">Popular Destinations</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-layer card-layer-image1 px-6 py-4 mb-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+              <h8 class="text-bold text-gray-subtitle">JAPAN</h8>
+              <h4 class="text-title text-white">Osaka</h4>
+            </div>
+            <a href="#">
+              <span class="material-icons text-white">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-layer card-layer-image2 px-6 py-4 mb-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+              <h8 class="text-bold text-gray-subtitle">JAPAN</h8>
+              <h4 class="text-title text-white">Kyoto</h4>
+            </div>
+            <a href="#">
+              <span class="material-icons text-white">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-layer card-layer-image3 px-6 py-4 mb-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+              <h8 class="text-bold text-gray-subtitle text-uppercase">iceland</h8>
+              <h4 class="text-title text-white">Reykjavík</h4>
+            </div>
+            <a href="#">
+              <span class="material-icons text-white">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-layer card-layer-image4 px-6 py-4 mb-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+              <h8 class="text-bold text-gray-subtitle text-uppercase">France</h8>
+              <h4 class="text-title text-white">Paris</h4>
+            </div>
+            <a href="#">
+              <span class="material-icons text-white">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-layer card-layer-image5 px-6 py-4 mb-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+              <h8 class="text-bold text-gray-subtitle text-uppercase">Italy</h8>
+              <h4 class="text-title text-white">Roma</h4>
+            </div>
+            <a href="#">
+              <span class="material-icons text-white">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-layer card-layer-image6 px-6 py-4 mb-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+              <h8 class="text-bold text-gray-subtitle text-uppercase">Thailand</h8>
+              <h4 class="text-title text-white">Bangkok</h4>
+            </div>
+            <a href="#">
+              <span class="material-icons text-white">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Popular Destinations -->
+
+    <!-- Get Inspiration -->
+
+    <div class="get-inspiration mt-12 mt-lg-18">
+
+      <div class="d-flex justify-content-between align-items-center mb-6">
+        <h2 class="text-title text-bold">Get Inspiration</h2>
+        <div class="btn btn-outline-primary text-uppercase text-bold px-4 py-2">see more</div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="#">
+                <img class="card-img-top " src="assets/images/italy.jpg" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <p class="card-text">
+                <h4 class="card-title text-title text-bold text-left mt-6">The fifth most visited country</h4>
+                <p class="text-left">Italy is the fifth most visited country in the world, with a total of 52.3 million…
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="#">
+                <img class="card-img-top " src="assets/images/Bangkok.jpg" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <p class="card-text">
+                <h4 class="card-title text-title text-bold text-left mt-6">Visit Thailand for Bangkok</h4>
+                <p class="text-left">Asian tourists primarily visit Thailand for Bangkok and the historical, natural,
+                  and…
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="#">
+                <img class="card-img-top " src="assets/images/NewZealand.jpg" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <p class="card-text">
+                <h4 class="card-title text-title text-bold text-left mt-6">Lord of the Rings Tour</h4>
+                <p class="text-left">The national cuisine has been described as Pacific Rim, incorporating the native
+                  Māori…</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Get Inspiration -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+  <script>
+
+
+
+    window.onload = function () {
+      // if (window.jQuery) {
+      //   // jQuery is loaded  
+      //   alert("Yeah!");
+      // } else {
+      //   // jQuery is not loaded
+      //   alert("Doesn't Work");
+      // }
+
+      // $("#destination").on("click", function () {
+      //   alert("Destination was clicked.");
+      // });
+
+      $('input[name="dates"]').daterangepicker({
+        // timePicker: true,
+        locale: {
+          format: 'YY/MM/DD'
+        }
+      });
+
+
+      /*Dropdown Menu*/
+      $('.dropdown').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
+      });
+      $('.dropdown').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+      });
+      $('.dropdown .dropdown-menu li').click(function () {
+        $(this).parents('.dropdown').find('span').text($(this).text());
+        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+      });
+      /*End Dropdown Menu*/
+
+      // $("#check-in").on("click", function () {
+      //   alert("Check in was clicked.");
+      // });
+
+      // $("#check-in").datepicker();
+
+      // $('#check-in').datetimepicker({
+      //   format: 'YYYY-MM-DD hh:mm:ss',
+      //   locale: moment.locale('zh-cn')
+      // });
+
+
+      // $("#check-out").on("click", function () {
+      //   alert("Check out was clicked.");
+      // });
+
+      // $("#guests").on("click", function () {
+      //   alert("Guests was clicked.");
+      // });
+
+
+    }
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper1 = new Swiper('.top-choices>.swiper-container', {
+      // slidesPerView: 1.5,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      breakpoints: {
+        // // when window width is >= 480px
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper2 = new Swiper('.get-inspiration>.swiper-container', {
+      // slidesPerView: 1.5,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      breakpoints: {
+        // // when window width is >= 480px
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+    <!-- Subscribe for Exclusive Offer -->
+    <div class="subscription container-padding text-background text-center mt-18">
+      <div class="py-6 py-md-23">
+        <div class="h3 text-title text-extra-bold">Subscribe for Exclusive Offer</div>
+        <div class="pt-4 pt-md-6 d-flex justify-content-center">
+          <input type="email" class="border-0 py-4 pl-5" placeholder="Your email address">
+          <div class="btn btn-primary rounded-0 border-0 text-uppercase text-bold px-8 py-4">subscribe</div>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe for Exclusive Offer -->
+
+    <footer class="footer container-padding h7 px-14 py-6">
+
+      <!-- <div
+        class="d-flex flex-column flex-row-reverse d-md-flex flex-md-row justify-content-md-between d-lg-block align-items-center"> -->
+      <div class="d-lg-flex justify-content-lg-between align-items-lg-center">
+        <div class="d-flex flex-column-reverse flex-md-row justify-content-md-between d-lg-inline-flex">
+          <p class="mr-lg-16">© 2020 ALOHA, Inc. All rights reserved.</p>
+          <ul class="d-flex justify-content-between">
+            <li class="mr-md-6"><a href="#">FAQs</a></li>
+            <li class="mr-md-6"><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-inline">
+          <ul class="d-flex">
+            <li class="d-flex align-items-center mr-6">
+              <span class="material-icons mr-2">
+                language
+              </span>
+              <select class="h7">
+                <option>English</option>
+                <option>Chinese</option>
+              </select>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="material-icons">
+                attach_money
+              </span>
+              <select class="h7">
+                <option>TWD</option>
+                <option>USD</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+
+
+    <!-- <script src="https://cdn.bootcss.com/moment.js/2.18.1/moment-with-locales.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script> -->
+
+    <!-- <script>
+      if (typeof jQuery == "undefined") {
+        alert("JQuery is not installed");
+      } else {
+        alert("JQuery is installed correctly!");
+      }
+
+      window.onload = function () {
+        if (window.jQuery) {
+          alert('jQuery is loaded');
+        }
+        else {
+          alert('jQuery is not loaded');
+        }
+      }
+    </script> -->
+
+
+</body>
+
+</html>
