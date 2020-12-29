@@ -15851,8 +15851,7 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
 .selected {
   color: #6C51E2;
   display: inline-block;
-  border-bottom: 2px solid #6C51E2;
-  padding-bottom: 2px; }
+  border-bottom: 2px solid #6C51E2; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
@@ -16078,5 +16077,20 @@ body {
 
 .search .dropdown .dropdown-menu li:active {
   background-color: #e2e2e2; }
+
+.selected-link {
+  display: inline-block;
+  text-decoration: none; }
+  .selected-link a:link {
+    text-decoration: none; }
+  .selected-link a:visited {
+    text-decoration: none; }
+  .selected-link a:hover {
+    text-decoration: none; }
+  .selected-link a:active {
+    text-decoration: none; }
+
+.selected-link:hover {
+  border-bottom: 2px solid #6C51E2; }
 
 /*# sourceMappingURL=all.css.map */
