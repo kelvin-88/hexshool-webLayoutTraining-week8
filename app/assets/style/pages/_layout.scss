@@ -50,6 +50,7 @@ $card-img-overlay-padding:          1rem 1.5rem ;//1.25rem !default;
 
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
+@import "bootstrap/pagination";
 @import "bootstrap/type";
 @import "bootstrap/transitions"; // for nav bar collapse when md size
 @import "bootstrap/utilities";
@@ -184,12 +185,17 @@ body {
     padding-right: 0;
   }
 
-  @include media-breakpoint-up(md) {
-    .h3 {
-      font-size: 48px;
-    }
-
+  // @include media-breakpoint-up(md) {
+  //   .h3 {
+  //     font-size: 48px;
+  //   }
   
+  // }
+}
+
+.h2-md {
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
   }
 }
 
