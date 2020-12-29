@@ -1,0 +1,40 @@
+/**** Custom styles for noUiSlider ****/
+.noUi-connect {
+  background: $primary !important;  
+}
+.noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle {
+  background: $primary !important;
+}
+.noUi-target.noUi-horizontal .noUi-tooltip {
+	background-color: $primary !important;
+}
+
+// .noUi-horizontal {
+//   height: 3px !important;
+// }
+
+// .noUi-handle {
+//   width: 100px;
+// }
+
+// .noUi-horizontal .noUi-handle,
+// .noUi-vertical .noUi-handle {
+//   width: 15px;
+//   height: 15px;
+//   border-radius: 50%;
+//   box-shadow: none;
+//   background-color: #26A69A;
+//   border: none;
+//   left: -5px;
+//   top: -6px;
+//   transition: width .2s cubic-bezier(0.215, 0.610, 0.355, 1.000),
+//   height .2s cubic-bezier(0.215, 0.610, 0.355, 1.000),
+//   left .2s cubic-bezier(0.215, 0.610, 0.355, 1.000),
+//   top .2s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+// }
+// .noUi-handle:before {
+//   content: none;
+// }
+// .noUi-handle:after {
+//   content: none;
+// }

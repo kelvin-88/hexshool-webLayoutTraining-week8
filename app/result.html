@@ -1,0 +1,175 @@
+---
+title: Aloha - Search Results
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+
+<div class="row no-gutters d-md-none h8 text-center text-background p-2">
+  <div class="col-4 py-2 border-right border-white">Bangkok</div>
+  <div class="col-4 py-2 border-right border-white">17 June - 19 June</div>
+  <div class="col-4 py-2">2 adults・1 room</div>
+</div>
+
+<div class="d-none d-md-block">
+  <div class="container container-padding text-background">
+
+    <div class="search-result rounded-top py-6">
+      <ul class="d-flex justify-content-between">
+        <li class="search-box d-flex align-items-center bg-white mr-2 mr-lg-4 px-2" style="flex-grow: 1;">
+          <span class="material-icons mr-2">
+            room
+          </span>
+          <!-- <p>Destination</p> -->
+          <div class="d-flex flex-column">
+            <span class="text-bold">Destination</span>
+            <span>Bangkok, Thailand</span>
+          </div>
+        </li>
+
+        <li class="search-box d-flex align-items-center bg-white mr-2 mr-lg-4 px-2" style="flex-grow: 1;">
+          <span class="material-icons mr-4">
+            date_range
+          </span>
+          <div class="d-none d-md-flex d-lg-none flex-column">
+            <span class="text-bold">Check-in / Check-out</span>
+            <span>17 June - 19 June</span>
+          </div>
+          <div class="d-none d-lg-flex align-items-center justify-content-between" style="flex-grow: 1;">
+            <div class="d-flex flex-column" style="flex-grow: 1;">
+              <span class="text-bold">Check-in</span>
+              <span>17 June</span>
+            </div>
+            <div class="text-background mx-2" style="height: 40px; width: 1px;">
+            </div>
+            <div class="d-flex flex-column" style="flex-grow: 1;">
+              <span class="text-bold">Check-out</span>
+              <span>19 June</span>
+            </div>
+          </div>
+
+        </li>
+
+        <li class="search-box d-flex align-items-center bg-white mr-2 mr-lg-4 px-2" style="flex-grow: 1;">
+          <span class="material-icons mr-4">
+            person
+          </span>
+          <div class="d-flex flex-column">
+            <span class="text-bold">Guests</span>
+            <span>2 adults・1 room</span>
+          </div>
+        </li>
+        <li class="align-items-stretch">
+          <div class="btn btn-primary text-uppercase text-bold px-8 py-4">search</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container container-padding">
+  <div class="row mt-4 mt-md-6 mt-lg-12">
+    <div class="col-12 col-md-4 h2 text-title text-bold text-center text-md-left">Bangkok<sup
+        class="text-hightlight">3,240</sup>
+    </div>
+    <div class="col-8 text-bold d-none d-md-block">
+      <ul class="d-flex">
+        <li class="mr-6">Recommended</li>
+        <li class="mr-6">Lowest Price</li>
+        <li class="mr-6">Best value</li>
+        <li>Distance to City Center</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4 text-background p-6">
+      <ul class="mb-6">
+        <li class="text-bold mb-4">Deals</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Free cancellation</li>
+        <li><input type="checkbox" class="mr-1 mb-2">No prepayment</li>
+        <li><input type="checkbox" class="mr-1">Special offers</li>
+      </ul>
+      <div class="w-100 bg-white mb-6" style="height: 1px"></div>
+      <ul class="mb-6">
+        <li class="text-bold mb-4">Popular filter</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Breakfast included</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Free Wi-Fi</li>
+        <li><input type="checkbox" class="mr-1">Swimming pool</li>
+      </ul>
+      <div class="w-100 bg-white mb-6" style="height: 1px"></div>
+      <ul class="mb-6">
+        <li class="text-bold mb-4">Budget</li>
+        <li class="mb-6" id="slider"></li>
+        <li>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="bg-white p-2" style="flex-grow: 1;">
+              <p class="text-bold ">Min price</p>
+              <p>TWD <span id="min_price">800</span></p>
+            </div>
+            <p class="mx-2">-</p>
+            <div class="bg-white p-2" style="flex-grow: 1;">
+              <p class="text-bold">Max price</p>
+              <p>TWD <span id="max_price">4,000+</span></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="w-100 bg-white mb-6" style="height: 1px"></div>
+      <ul class="mb-6">
+        <li class="text-bold mb-4">Rating</li>
+        <li><input type="checkbox" class="mr-1 mb-2">★★★★★ 5.0</li>
+        <li><input type="checkbox" class="mr-1 mb-2">★★★★ 4.0</li>
+        <li><input type="checkbox" class="mr-1 mb-2">★★★ 3.0</li>
+        <li><input type="checkbox" class="mr-1 mb-2">★★ 2.0</li>
+        <li><input type="checkbox" class="mr-1 mb-2">★ 1.0</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Unrated</li>
+      </ul>
+      <div class="w-100 bg-white mb-6" style="height: 1px"></div>
+      <ul>
+        <li class="text-bold mb-4">Stay type</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Hotel</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Apartment</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Unique</li>
+        <li><input type="checkbox" class="mr-1 mb-2">Hostel</li>
+      </ul>
+    </div>
+    <div class="col-8">
+      <div class="d-flex">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.css">
+
+<script>
+  var slider = document.getElementById('slider');
+
+  noUiSlider.create(slider, {
+    start: [0, 4000],
+    connect: true,
+    range: {
+      'min': 0,
+      'max': 4000
+    }
+  });
+
+  slider.noUiSlider.on('update', function (values, handle) {
+
+    var minPrice = document.getElementById('min_price');
+    var maxPrice = document.getElementById('max_price');
+
+    var value = values[handle];
+
+    // handel 0 - min value, 1- max value
+    if (handle) {
+      maxPrice.innerHTML = Math.round(value).toString() + "+";
+    } else {
+      minPrice.innerHTML = Math.round(value).toString();
+    }
+  });
+</script>
