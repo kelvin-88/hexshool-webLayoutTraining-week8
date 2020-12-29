@@ -255,3 +255,57 @@
       background-color: #e2e2e2
   }
 }
+
+// test
+// .button:hover, button:hover {
+//     display:block; /*將區塊顯示*/
+// }
+
+// .selected {
+//   color: $primary;
+//   display:inline-block;
+//   border-bottom:2px solid $primary;
+//   padding-bottom:2px;
+// }
+
+
+
+.selected-link {
+    display: inline-block;
+    // color: $primary;
+    text-decoration: none;
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    }
+}
+
+.selected-link:hover {
+  border-bottom: 2px solid $primary;
+}
+// .cool-link::after {
+//     content: '';
+//     display: block;
+//     width: 0;
+//     // height: 2px;
+//     // background: $primary;
+//     border-bottom:2px solid $primary;
+//     // padding-bottom:2px;
+
+    
+//     // transition: width .3s;
+// }
+
+// .cool-link:hover::after {
+//     width: 100%;
+//     //  padding-bottom:2px;
+//     //transition: width .3s;
+// }
