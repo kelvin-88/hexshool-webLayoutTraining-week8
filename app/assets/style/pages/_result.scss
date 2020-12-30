@@ -9,6 +9,11 @@
 	background-color: $primary !important;
 }
 
+.pagination .page-link:hover {
+  background-color: $primary !important;
+  color: white !important;
+}
+
 // .noUi-horizontal {
 //   height: 3px !important;
 // }
