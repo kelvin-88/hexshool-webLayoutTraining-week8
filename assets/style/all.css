@@ -4,6 +4,9 @@ h7, .h7 {
 h8, .h8 {
   font-size: 0.75rem; }
 
+h9, .h9 {
+  font-size: 0.625rem; }
+
 *,
 *::before,
 *::after {
@@ -2793,6 +2796,83 @@ input[type="button"].btn-block {
     color: #fff; }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem; }
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #6C51E2;
+  background-color: #fff;
+  border: 1px solid #dee2e6; }
+  .page-link:hover {
+    z-index: 2;
+    color: #4021c6;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6; }
+  .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 81, 226, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(108, 81, 226, 0.25); }
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; }
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem; }
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #6C51E2;
+  border-color: #6C51E2; }
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6; }
+
+.pagination-lg .page-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem; }
+
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem; }
+
+.pagination-sm .page-link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5; }
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem; }
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -15810,6 +15890,14 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
+@media (min-width: 768px) {
+  .h-md-2 {
+    font-size: 48px; } }
+
+@media (min-width: 992px) {
+  .h-lg-4 {
+    font-size: 24px; } }
+
 .content-box {
   -webkit-box-sizing: content-box;
           box-sizing: content-box; }
@@ -15829,7 +15917,7 @@ ul {
   margin-bottom: 0;
   padding-left: 0; }
 
-h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9 .p {
   margin-bottom: 0; }
 
 .container {
@@ -15838,6 +15926,12 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
 
 .container-padding {
   padding: 0 15px; }
+  @media (min-width: 768px) {
+    .container-padding {
+      padding: 0 39px; } }
+  @media (min-width: 992px) {
+    .container-padding {
+      padding: 0 85px; } }
 
 .logo {
   background-image: url(../images/logo-aloha.svg);
@@ -15855,6 +15949,9 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .p {
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.text-hightlight {
+  color: #6C51E2; }
 
 .text-title {
   font-family: 'Raleway', sans-serif; }
@@ -15889,10 +15986,6 @@ body {
 
 .subscription input[type="email"] {
   padding-right: 0; }
-
-@media (min-width: 768px) {
-  .subscription .h3 {
-    font-size: 48px; } }
 
 .banner {
   -o-object-fit: cover;
@@ -16092,5 +16185,19 @@ body {
 
 .selected-link:hover {
   border-bottom: 2px solid #6C51E2; }
+
+/**** Custom styles for noUiSlider ****/
+.noUi-connect {
+  background: #6C51E2 !important; }
+
+.noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle {
+  background: #6C51E2 !important; }
+
+.noUi-target.noUi-horizontal .noUi-tooltip {
+  background-color: #6C51E2 !important; }
+
+.pagination .page-link:hover {
+  background-color: #6C51E2 !important;
+  color: white !important; }
 
 /*# sourceMappingURL=all.css.map */
